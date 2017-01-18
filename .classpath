@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src/main/java">
+		<attributes>
+			<attribute name="FROM_GRADLE_MODEL" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="src/main/resources">
+		<attributes>
+			<attribute name="FROM_GRADLE_MODEL" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="src/test/java">
+		<attributes>
+			<attribute name="FROM_GRADLE_MODEL" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8/"/>
+	<classpathentry kind="con" path="org.eclipse.buildship.core.gradleclasspathcontainer"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/gradle-3.2.1/lib/ant-1.9.6.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/gradle-3.2.1/lib/ant-launcher-1.9.6.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/gradle-3.2.1/lib/asm-all-5.1.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/gradle-3.2.1/lib/commons-collections-3.2.2.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/gradle-3.2.1/lib/commons-io-2.2.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/gradle-3.2.1/lib/commons-lang-2.6.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/gradle-3.2.1/lib/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/gradle-3.2.1/lib/gradle-base-services-3.2.1.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/gradle-3.2.1/lib/gradle-base-services-groovy-3.2.1.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/gradle-3.2.1/lib/gradle-cli-3.2.1.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/gradle-3.2.1/lib/gradle-core-3.2.1.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/gradle-3.2.1/lib/gradle-docs-3.2.1.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/gradle-3.2.1/lib/gradle-installation-beacon-3.2.1.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/gradle-3.2.1/lib/gradle-jvm-services-3.2.1.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/gradle-3.2.1/lib/gradle-launcher-3.2.1.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/gradle-3.2.1/lib/gradle-logging-3.2.1.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/gradle-3.2.1/lib/gradle-messaging-3.2.1.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/gradle-3.2.1/lib/gradle-model-core-3.2.1.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/gradle-3.2.1/lib/gradle-model-groovy-3.2.1.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/gradle-3.2.1/lib/gradle-native-3.2.1.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/gradle-3.2.1/lib/gradle-open-api-3.2.1.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/gradle-3.2.1/lib/gradle-process-services-3.2.1.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/gradle-3.2.1/lib/gradle-resources-3.2.1.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/gradle-3.2.1/lib/gradle-script-kotlin-0.4.0.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/gradle-3.2.1/lib/gradle-tooling-api-3.2.1.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/gradle-3.2.1/lib/gradle-ui-3.2.1.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/gradle-3.2.1/lib/gradle-wrapper-3.2.1.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/gradle-3.2.1/lib/groovy-all-2.4.7.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/gradle-3.2.1/lib/guava-jdk5-17.0.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/gradle-3.2.1/lib/jansi-1.14.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/gradle-3.2.1/lib/javax.inject-1.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/gradle-3.2.1/lib/jaxen-1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/gradle-3.2.1/lib/jcip-annotations-1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/gradle-3.2.1/lib/jcl-over-slf4j-1.7.10.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/gradle-3.2.1/lib/jul-to-slf4j-1.7.10.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/gradle-3.2.1/lib/kotlin-compiler-embeddable-1.1.0-dev-2053.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/gradle-3.2.1/lib/kotlin-reflect-1.1.0-dev-2053.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/gradle-3.2.1/lib/kotlin-runtime-1.1.0-dev-2053.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/gradle-3.2.1/lib/kotlin-stdlib-1.1.0-dev-2053.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/gradle-3.2.1/lib/kryo-2.20.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/gradle-3.2.1/lib/log4j-over-slf4j-1.7.10.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/gradle-3.2.1/lib/minlog-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/gradle-3.2.1/lib/native-platform-0.11.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/gradle-3.2.1/lib/native-platform-freebsd-amd64-0.11.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/gradle-3.2.1/lib/native-platform-freebsd-i386-0.11.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/gradle-3.2.1/lib/native-platform-linux-amd64-0.11.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/gradle-3.2.1/lib/native-platform-linux-i386-0.11.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/gradle-3.2.1/lib/native-platform-osx-amd64-0.11.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/gradle-3.2.1/lib/native-platform-osx-i386-0.11.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/gradle-3.2.1/lib/native-platform-windows-amd64-0.11.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/gradle-3.2.1/lib/native-platform-windows-i386-0.11.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/gradle-3.2.1/lib/objenesis-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/gradle-3.2.1/lib/reflectasm-1.07-shaded.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/gradle-3.2.1/lib/slf4j-api-1.7.10.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
