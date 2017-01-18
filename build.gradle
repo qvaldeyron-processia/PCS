@@ -1,4 +1,8 @@
+
+import proguard.gradle.ProGuardTask
+
 apply plugin: 'java'
+apply plugin: 'idea'
 
 dependencies {
     compile gradleApi()
@@ -6,21 +10,89 @@ dependencies {
 
 apply plugin: 'maven'
 
-repositories {
-    mavenCentral()
-}
-
-dependencies {
-    testCompile 'junit:junit:4.11'
-}
-
 group = 'processia.gradle.core'
 version = '2017.1.0'
 
-uploadArchives {
-    repositories {
-        mavenDeployer {
-            repository(url: uri('../repo'))
+
+def javaName = archivesBaseName
+def fullJavaName = archivesBaseName + '-secure'
+ 
+sourceSets {
+    main {
+        java {
+            srcDir 'src/main/java'
         }
     }
 }
+ 
+repositories {
+    mavenCentral()
+}
+ 
+dependencies {
+    compile 'com.google.code.gson:gson:2.3.1'
+    compile 'org.slf4j:slf4j-api:1.7.13'
+    runtime 'org.apache.logging.log4j:log4j-slf4j-impl:2.5'
+    runtime 'org.apache.logging.log4j:log4j-api:2.5'
+    runtime 'org.apache.logging.log4j:log4j-core:2.5'
+ 
+    // test
+    testCompile 'junit:junit:4.11'
+}
+ 
+ 
+jar {
+    baseName = javaName
+    manifest {
+        attributes "Implementation-Title": javaName
+        attributes "Implementation-Version": version
+    }
+ 
+}
+ 
+task fullJavaJar(type: Jar) {
+    baseName = fullJavaName
+    manifest {
+        attributes "Implementation-Title": baseName
+        attributes "Implementation-Version": version
+    }
+    from sourceSets.main.output
+    artifacts {
+        archives fullJavaJar
+    }
+}
+ 
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+ 
+    dependencies {
+        classpath 'net.sf.proguard:proguard-gradle:5.3.2'
+    }
+}
+ 
+ 
+task proguard(type: ProGuardTask, dependsOn: 'jar') {
+ 
+     doFirst {
+        configurations.compile.each { println it.name }
+    }
+    ext {
+        obfuscatedJar = "./carballo-${version}.jar"
+    }
+    injars jar.archivePath
+    injars configurations.compile
+    outjars obfuscatedJar
+    libraryjars "${System.getProperty('java.home')}/lib/rt.jar"
+    optimizationpasses 5
+    allowaccessmodification
+    dontskipnonpubliclibraryclassmembers
+    target '1.7'
+    keep 'public class com.alonsoruibal.chess.uci.Uci { *; }'
+    keep 'public class EpdTest { *; }'
+    doLast {
+        logger.lifecycle "[Proguard] Generated obfuscated JAR in ${obfuscatedJar}"
+    }
+}
+ 

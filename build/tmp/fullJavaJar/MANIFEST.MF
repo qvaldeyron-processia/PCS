@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Implementation-Title: PCS-gradle-toolkit-secure
+Implementation-Version: 2017.1.0
+

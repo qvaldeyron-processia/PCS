@@ -1,2 +1,4 @@
 Manifest-Version: 1.0
+Implementation-Title: PCS-gradle-toolkit
+Implementation-Version: 2017.1.0
 
