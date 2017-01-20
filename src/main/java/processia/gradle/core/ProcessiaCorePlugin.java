@@ -1,8 +1,5 @@
 package processia.gradle.core;
 
-
-
-
 import org.gradle.api.Plugin;
 import org.gradle.api.Project;
 
